@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Personal Expense Tracker</h1>
-    <h2>Current Month's Spending: ${{ total_spending }}</h2>
-    <a href="/add">Add New Expense</a>
-    <a href="/view">View All Expenses</a>
+    <div class="container">
+        <h1>Personal Expense Tracker</h1>
+        <h2>Current Month's Spending: ${{ total_spending }}</h2>
+        <div class="center-link">
+            <a href="/add" class="button">Add New Expense</a>
+            <a href="/view" class="button">View All Expenses</a>
+        </div>
+    </div>
 </body>
 </html>
