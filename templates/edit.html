@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Edit Expense</h1>
-    <form method="POST">
-        <label for="description">Description:</label>
-        <input type="text" id="description" name="description" value="{{ expense['description'] }}" required><br>
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" name="amount" value="{{ expense['amount'] }}" step="0.01" required><br>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" value="{{ expense['date'] }}" required><br>
-        <button type="submit">Save Changes</button>
-    </form>
-    <a href="/view">Cancel</a>
+    <div class="container">
+        <h1>Edit Expense</h1>
+        <form method="POST">
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" value="{{ expense['description'] }}" required>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" value="{{ expense['amount'] }}" step="0.01" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="{{ expense['date'] }}" required>
+            <button type="submit">Save Changes</button>
+        </form>
+        <div class="center-link">
+            <a href="/view" class="button">Cancel</a>
+        </div>
+    </div>
 </body>
 </html>
